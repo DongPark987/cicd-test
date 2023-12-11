@@ -107,6 +107,7 @@ export class CatchGateway implements OnGatewayConnection, OnGatewayDisconnect {
     test(client: Socket, payload: any) {
         console.log('TEST');
         client.join('1');
+        
         return { result: true };
     }
     @SubscribeMessage('leave_game')
